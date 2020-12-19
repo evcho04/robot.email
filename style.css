@@ -1,0 +1,383 @@
+
+
+/*When having a picture with a background, dont align and center because it for the element itself and it cuts everything else.*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+    
+    .one-col{
+       margin:32px;
+        color:#000;
+    }
+    .button{
+        margin-bottom:64px;
+        margin-top:64px;
+    }
+    .btn{
+        padding:1% 2%;
+        background:yellow;
+        border-radius:30px;
+        }
+    .first-text{
+        margin:30px auto;
+        width:40em;
+    }
+    
+    a{
+        text-decoration:none;
+        text-align:center;
+        font-size:16px;
+        font-family: sans-serif;
+        font-weight:500;
+    }
+    .two-col{
+        display:grid;
+        grid-template-rows:1fr;
+        grid-template-columns:50% 50%;
+        }
+
+        .digger-description{
+            grid-row:1/2;
+            grid-column:1/2;
+            background:brown;
+            padding:15% 25%;
+        }
+
+        .digger-text{
+        color:white;
+        text-align:left;
+        
+}
+.digger-image{
+    grid-row:1/2;
+    grid-column:2/3;
+    margin:5%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.digger-photo{
+    height:70%;
+    width:30%;
+    margin: 0 auto;
+}
+
+.btn-digger{
+    padding:2% 1%;
+    background:yellow;
+    border-radius:30px;
+    justify-self:center;
+    margin:32px 35% 20px ;
+    
+    }
+
+
+/*------------------Second Row-------------*/
+.two-col2{
+display:grid;
+grid-template-rows:1fr;
+grid-template-columns:50% 50%;
+}
+
+.scalper-description{
+    grid-row:1/2;
+    grid-column:2/3;
+    background:green;
+    padding: 15% 25%;
+}
+
+.scalper-text{
+color:white;
+text-align:left;
+
+}
+.scalper-image{
+grid-row:1/2;
+grid-column:1/2;
+margin:5%;
+display:flex;
+flex-direction:column;
+}
+
+.scalper-photo{
+height:70%;
+width:30%;
+margin: 0 auto;
+}
+
+.btn-scalper{
+    padding:2% 1%;
+    background:yellow;
+    border-radius:30px;
+    justify-self:center;
+    margin:10px 35%;
+
+}
+
+/*------------------Third Row-------------*/
+.two-col3{
+display:grid;
+grid-template-rows:1fr;
+grid-template-columns:repeat(auto-fill, 50%);
+}
+
+.moon-description{
+    grid-row:1/2;
+    grid-column:1/2;
+    background:blueviolet;
+    padding: 15% 25%;
+}
+
+.moon-text{
+color:white;
+text-align:left;
+
+}
+.moon-image{
+grid-row:1/2;
+grid-column:2/3;
+margin:5%;
+display:flex;
+flex-direction:column;
+}
+
+.moon-photo{
+height:70%;
+width:30%;
+margin: 0 auto;
+}
+
+.btn-moon{
+padding:2% 1%;
+background:yellow;
+border-radius:30px;
+justify-self:center;
+margin:10px 35%;
+
+}
+
+.justtext{
+background:purple;
+padding:5% 15%;
+color:white;
+}
+
+.little_robot{
+    display:block;
+    margin:0 auto;
+}
+
+.footer{
+    text-align:center;
+    font:16px sans-serif;
+    margin: 0 0 40px;
+}
+
+
+
+/* Tablet version/phone */
+
+
+@media (max-width:900px){
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+#wrapper{
+        width:100%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+}
+   .header{
+    margin:0;
+    padding:0;
+    }
+    .header-image{
+        width:100vw;
+        grid-column:1/2;
+        grid-row:1/2;
+        margin:0 auto;
+        }
+    .one-col{
+        margin:0;
+        grid-column:1/2;
+        grid-row:2/3;
+        color: #000;
+        padding:20px;
+        text-align:center;
+        font-size:16px;
+        font-family:sans-serif;
+        
+    }
+    .button{
+        margin-bottom:50px;
+        margin-top:60px;
+    }
+    .btn{
+        padding:5% 10%;
+        background:yellow;
+        border-radius:30px;
+        font-size:18px;
+        margin:20px;
+        }
+
+    .first-text{
+        text-align:center;
+        width:80vw;
+        margin-top:30px;
+    }
+    
+    a{
+        text-decoration:none;
+        columns: #000000;;
+        font-weight: 500;
+    }
+    
+    .digger-description{
+            grid-row:3/4;
+            grid-column:1/2;
+            background:brown;
+            padding:10%;
+            margin:0;
+        }
+
+        .digger-text{
+        color:white;
+        text-align:center;
+        font-size:16px;
+        font-family:sans-serif;
+        padding:20px 0;
+        
+}
+.digger-image{
+    grid-row:4/5;
+    grid-column:1/2;
+
+}
+.digger-photo{
+    width:70%;
+    margin: 0 auto;
+}
+
+.btn-digger{
+    text-align:center;
+    font-size:18px;
+    font-family:sans-serif;
+    padding:5% 10%;
+    background:yellow;
+    border-radius:30px;
+    margin:20px;
+    }
+
+
+/*------------------Second Row-------------*/
+
+
+.scalper-description{
+    grid-row:5/6;
+    grid-column:1/2;
+    background:green;
+    padding:10%;
+    
+}
+
+.scalper-text{
+color:white;
+
+text-align:center;
+font-size:16px;
+font-family:sans-serif;
+padding:20px 0;
+}
+
+.scalper-image{
+grid-row:6/7;
+grid-column:1/2;
+}
+
+.scalper-photo{
+width:70%;
+margin: 0 auto;
+}
+
+.btn-scalper{
+padding:5% 10%;
+background:yellow;
+border-radius:30px;
+margin:20px;
+font:18px sans-serif;
+text-align:center;
+}
+
+/*------------------Third Row-------------*/
+
+.moon-description{
+    grid-row:7/8;
+    grid-column:1/2;
+    background:blueviolet;
+    padding:10%;
+    
+}
+
+.moon-text{
+    color:white;
+    text-align:center;
+    font-size:16px;
+    font-family:sans-serif;
+    padding:20px 0;
+
+}
+.moon-image{
+grid-row:8/9;
+grid-column:1/2;
+margin:5%;
+}
+
+.moon-photo{
+width:70%;
+margin: 0 auto;
+}
+
+.btn-moon{
+padding:5% 10%;
+background:yellow;
+border-radius:30px;
+margin:20px;
+text-align:center;
+font-size:18px;
+}
+
+.justtext{
+grid-row:10/11;
+grid-column:1/2;
+background:purple;
+padding:10%;
+text-align: center;
+font-size:16px;
+font-family:sans-serif;
+
+color:white;
+}
+
+.little_robot{
+    width:100%;
+}
+
+.two-col{
+    display:block;
+}
+.two-col2{
+    display:block;
+}
+.two-col3{
+    display:block;
+}
+
+}
+
+
